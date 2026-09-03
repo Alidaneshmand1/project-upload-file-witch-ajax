@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#upload-area{
+    text-align: center;
+    background: rgba(157, 245, 157, 0.72);
+    padding: 50px;
+}
+
+#upload-area p {
+    font-size: 48px;
+    margin-bottom: 48px;
+}
+
+#file {
+    display: none;
+}
+
+#button {
+font-size: 24px;
+padding: 12px 24px;
+cursor: pointer;
+border-radius: 5px;
+border: 1px solid rgba(187, 192, 201, 0.532);
+background: white;
+}
+
+#button:hover {
+background: rgba(131, 135, 142, 0.532) ;
+}
+
+#progress-area {
+
+    padding: 30px;
+}
+.progress-block {
+    margin-bottom: 3cqmax;
+}
+
+.progress-block label {
+    font-size: 24px;
+    line-height: 1.6;
+}
+.progress-bar {
+    height: 36px;
+    border: 1px solid rgb(182, 180, 180);
+    width: 100%;
+}
+.progress-bar span {
+    position: absolute;
+    font-size: 24px;
+    
+}
+.progress-bar div {
+    background-color: lightgreen;
+    height: 100%;
+}

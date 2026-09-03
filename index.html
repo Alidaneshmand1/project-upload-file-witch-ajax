@@ -1,15 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-    <div id="upload-area"></div>
-    <p>select the file to upload</p>
-    <input type="file" id="file" multiple>
-    <label for="file" id="button">select</label>
-</body>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div id="upload-area">
+      <p>select the file to upload</p>
+      <input type="file" id="file" multiple />
+      <label for="file" id="button">select</label>
+    </div>
+    <div id="progress-area">
+        <div class="progress-block">
+            <label>file : file1</label>
+            <div class="progress-bar">
+                <div style="width: 18%;">
+                  <span>18%</span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+  </body>
 </html>
