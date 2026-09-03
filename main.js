@@ -10,6 +10,22 @@ upload.addEventListener("change", function () {
     formData.append(files[i].name, files[i]);
     const block = addProgressBlock(files[i]);
 
+
+
+    xhr.upload.addEventListener('progress' , function (event) {
+        const progressDiv = block.querySelector('#.progress-bar div')
+        const progressSpan = block.querySelector('#span')
+        if (event.lengthComputable) {
+            const percent = ((event.loaded / event.total) * 100).toFixed(1)
+            progressSpan.innerHTML = percent + "%"
+            progressDiv.style.with = percent + "%"
+        }
+    })
+
+
+
+
+
     xhr.send(formData);
   }
 });
